@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage Ecommerce Website</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--Header section-->
+    <section class="header w-full flex flex-row items-center justify-between py-5 px-5 md:px-20 bg-[#E3E6F3] shadow-[0_5px_15px_rgb(0,0,0,0.06)] z-20 sticky gap-4 md:gap-0 top-0 left-0">
+        <a href="#"><img src="assets/images/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar" class="navbar flex flex-col md:flex-row md:static bg-[#E3E6F3] md:bg-[#E3E6F3] shadow-[0_40px_60px_rgb(0,0,0,0.1)] h-[100vh] md:h-auto md:shadow-none w-[300px] md:w-auto md:pl-0 md:pt-[15px] md:pb-0 fixed items-start top-0 right-[-300px] md:right-0 pt-[180px] pr-0 pb-0 pl-2.5 [&>*]:mb-[25px]  md:items-center justify-start md:justify-center [&>li>a]:px-5 text-4xl md:[&>*]:text-base text-[#1f1f1f] md:[&>*]:text-[#1a1a1a] [&>*]:font-semibold [&>li>a:hover]:underline [&>*]:hover:text-[#088178] [&>li>a:hover]:decoration-[#088178] [>li>a:hover]:decoration-2 [&>li>a:hover]:underline-offset-4 transition-all duration-300">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="hidden md:block" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a class="md:hidden" href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div class="mobile flex md:hidden items-center">
+            
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping text-[#1a1a1a] text-[24px] pl-[20px] hidden"></i></a>
+            <i id="bar" class="fas fa-outdent hidden text-[#1a1a1a] text-[24px] pl-[20px]"></i>
+        </div>
+    </section>
+
+    <!--single product section-->
+    <section class="pro-details px-7 py-10 md:px-15 md:py-20 flex flex-col md:flex-row md:mt-5">
+        <div class="single-pro-img w-full md:w-[40%] mr-0 md:mr-[70px]">
+            <img src="assets/images/products/f1.jpg" class="w-full" id="mainImg" alt="">
+
+            <div class="sm-img-grp flex justify-between gap-1.5 mt-1.5">
+
+                <div class="small-img-column cursor-pointer">
+                    <img src="assets/images/products/f1.jpg" class="small-img w-full" alt="">
+                </div>
+
+                <div class="small-img-column cursor-pointer">
+                    <img src="assets/images/products/f2.jpg" class="small-img w-full" alt="">
+                </div>
+
+                <div class="small-img-column cursor-pointer">
+                    <img src="assets/images/products/f3.jpg" class="small-img w-full" alt="">
+                </div>
+
+                <div class="small-img-column cursor-pointer">
+                    <img src="assets/images/products/f4.jpg" class="small-img w-full" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details w-full md:w-[50%] pt-[30px]">
+            <h6>Home / T-Shirts</h6>
+            <h4 class="pt-10 pb-5 text-3xl font-bold">Men's Fashion T Shirts</h4>
+            <h2 class="text-[26px] font-semibold">$139.00</h2>
+            <select class="block py-[5px] px-[10px] mb-[10px] border rounded">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXl</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+
+            <input type="number" class="w-[50px] h-[47px] pl-[10px] text-base mr-[10px] border rounded" value="1">
+
+            <a href="#" class="text-[13px] font-semibold py-[11px] px-[18px] text-[#fff] bg-[#088178] cursor-pointer transition duration-300 mt-2.5 rounded border border-[#fff]  hover:bg-transparent hover:border-[#088178] hover:text-[#222]">Add To Cart</a>
+
+            <h4 class="mt-5 text-2xl mb-2.5">Product Details</h4>
+            <span class="leading-6">This T-shirt is made from 100% organic cotton, offering a comfortable and stylish fit for everyday wear. Perfect for casual outings or lounging at home. It is available in multiple colors and sizes to suit your preferences. Durable and easy to maintain, this T-shirt is a must-have addition to your wardrobe.Order Today get your favourite one right at your doorstep.</span>
+        </div>
+    </section>
+
+    <!--New Arrival section-->
+   <section class="product1 py-10 px-2 md:px-20 text-center">
+    <h2 class="font-bold text-4xl md:text-[45px]">Featured Products</h2>
+    <p class="text-[#088178] text-[16px]">Summer Collection New Modern Design</p>
+    <div class="pro-container grid grid-cols-2 px-5 pt-5 md:grid-cols-4 gap-6 md:gap-10">
+
+        <div class="pro min-w-[180px] md:min-w-[250px] py-2.5 px-2 md:px-3 border border-[#cce7d0] rounded-[25px] cursor-pointer shadow-[20px_20px_30px_rgb(0,0,0,0.02)] my-[15px] ms-0 hover:shadow-[20px_20px_30px_rgb(0,0,0,0.06)] transition duration-200 relative">
+            <img src="assets/images/products/n1.jpg" class="w-full rounded-[20px]" alt="">
+            <div class="des text-start py-[10px] px-0">
+                <span class="text-[#606063] text-[12px]">adidas</span>
+                <h5 class="pt-[7px] text-[#1a1a1a] text-[14px]">Cartoon Astronaut T-Shirts</h5>
+                <div class="star text-[12px] text-[#f3b519]">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="pt-[7px] text-[15px] text-[#088178] font-bold">$78</h4>
+            </div>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#e8f6ea] border border-[#cce7d0] absolute bottom-5 right-2.5">
+                <i class="fa-solid fa-cart-shopping text-[#088178] text-base"></i>
+              </a>                          
+        </div>
+
+        <div class="pro min-w-[180px] md:min-w-[250px] py-2.5 px-2 md:px-3 border border-[#cce7d0] rounded-[25px] cursor-pointer shadow-[20px_20px_30px_rgb(0,0,0,0.02)] my-[15px] ms-0 hover:shadow-[20px_20px_30px_rgb(0,0,0,0.06)] transition duration-200 relative">
+            <img src="assets/images/products/n2.jpg" class="w-full rounded-[20px]" alt="">
+            <div class="des text-start py-[10px] px-0">
+                <span class="text-[#606063] text-[12px]">adidas</span>
+                <h5 class="pt-[7px] text-[#1a1a1a] text-[14px]">Cartoon Astronaut T-Shirts</h5>
+                <div class="star text-[12px] text-[#f3b519]">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="pt-[7px] text-[15px] text-[#088178] font-bold">$78</h4>
+            </div>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#e8f6ea] border border-[#cce7d0] absolute bottom-5 right-2.5">
+                <i class="fa-solid fa-cart-shopping text-[#088178] text-base"></i>
+              </a>                          
+        </div>
+
+        <div class="pro min-w-[180px] md:min-w-[250px] py-2.5 px-2 md:px-3 border border-[#cce7d0] rounded-[25px] cursor-pointer shadow-[20px_20px_30px_rgb(0,0,0,0.02)] my-[15px] ms-0 hover:shadow-[20px_20px_30px_rgb(0,0,0,0.06)] transition duration-200 relative">
+            <img src="assets/images/products/n8.jpg" class="w-full rounded-[20px]" alt="">
+            <div class="des text-start py-[10px] px-0">
+                <span class="text-[#606063] text-[12px]">adidas</span>
+                <h5 class="pt-[7px] text-[#1a1a1a] text-[14px]">Cartoon Astronaut T-Shirts</h5>
+                <div class="star text-[12px] text-[#f3b519]">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="pt-[7px] text-[15px] text-[#088178] font-bold">$78</h4>
+            </div>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#e8f6ea] border border-[#cce7d0] absolute bottom-5 right-2.5">
+                <i class="fa-solid fa-cart-shopping text-[#088178] text-base"></i></a>  
+                                        
+        </div>
+
+        <div class="pro min-w-[180px] md:min-w-[250px] py-2.5 px-2 md:px-3 border border-[#cce7d0] rounded-[25px] cursor-pointer shadow-[20px_20px_30px_rgb(0,0,0,0.02)] my-[15px] ms-0 hover:shadow-[20px_20px_30px_rgb(0,0,0,0.06)] transition duration-200 relative">
+            <img src="assets/images/products/n7.jpg" class="w-full rounded-[20px]" alt="">
+            <div class="des text-start py-[10px] px-0">
+                <span class="text-[#606063] text-[12px]">adidas</span>
+                <h5 class="pt-[7px] text-[#1a1a1a] text-[14px]">Cartoon Astronaut T-Shirts</h5>
+                <div class="star text-[12px] text-[#f3b519]">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="pt-[7px] text-[15px] text-[#088178] font-bold">$78</h4>
+            </div>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#e8f6ea] border border-[#cce7d0] absolute bottom-5 right-2.5">
+                <i class="fa-solid fa-cart-shopping text-[#088178] text-base"></i></a> 
+                                       
+        </div>
+
+
+    </div>
+   </section>
+     
+
+        <!--Newsletter section-->
+   <section class="newsletter-bg section-m1 flex justify-between flex-wrap items-center py-5 px-12 md:py-10 md:px-20">
+    <div class="news-text">
+        <h4 class="text-[24px] font-bold text-[#fff]">Sign Up For Newsletter</h4>
+        <p class="text-sm font-semibold text-[#818ea0]">Get E-mail updates about our latest shop and <span class="text-[#ffbd27]">special offer.</span></p>
+    </div>
+    <div class="form flex w-full max-w-[600px]">
+        <input
+          type="text"
+          class="h-[3.125rem] w-full bg-white py-0 px-[1.25em] text-sm border border-transparent rounded-tl-[4px] rounded-bl-[4px] rounded-tr-0 rounded-br-0"
+          placeholder="Your E-mail address"/>
+        <a href="#"
+          class="text-[13px] font-semibold h-[3.125rem] px-6 whitespace-nowrap text-white bg-[#088178] flex items-center justify-center rounded-tr-[4px] rounded-br-[4px]">Sign Up
+        </a>
+      </div>
+   </section>
+
+   <!--Footer section-->
+   <footer class="bg-[#E3E6F3] px-2 md:px-5 py-[40px]">
+    <div class="grid items-center justify-center px-12 py-6 sm:grid-cols-4 gap-4 md:gap-5 [&>*]:mb-5">
+      <div class="pl-5 [&>a]:hover:text-[#088178]">
+        <img class="mb-[30px]" src="assets/images/logo.png" alt="" />
+        <h4 class="pb-5 text-4xl font-semibold">Contact</h4>
+        <p class="mb-2 text-base"><strong>Address:</strong>Dhaka,Bangladesh</p>
+        <p class="mb-2 text-base"><strong>Phone:</strong>01683158940</p>
+        <p class="mb-2 text-base"><strong>Hours:</strong>10.00-18.00. Mon-Sat</p>
+        <div class="follow mt-5">
+          <h4 class="pb-5 text-3xl sm:text-4xl font-semibold">Follow us</h4>
+          <div class="icon [&>i]:pr-1 [&>i]:text-[#465b52] [&>i]:hover:text-[#088178] [&>i]:text-[20px]">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex flex-col pl-5 [&>a]:hover:text-[#088178]">
+        <h4 class="pb-5 text-3xl sm:text-4xl font-semibold">About</h4>
+        <a class="mb-2.5 text-base text-[#222]" href="#">About Us</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Delivery Information</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Privacy policy</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Terms & Conditions</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Contact Us</a>
+      </div>
+  
+      <div class="flex flex-col pl-5 [&>a]:hover:text-[#088178]">
+        <h4 class="pb-5 text-3xl sm:text-4xl font-semibold">My Account</h4>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Sign In</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">View Cart</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">My Wishlist</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Track My Order</a>
+        <a class="mb-2.5 text-base text-[#222]" href="#">Help</a>
+      </div>
+  
+      <div class="flex flex-col pl-5">
+        <h4 class="pb-5 text-3xl sm:text-4xl [&>a]:hover:text-[#088178] font-semibold">Install App</h4>
+        <p class="mb-2 text-base">From App Store or Google Play</p>
+  
+        <div class="row flex gap-1">
+          <img class="rounded-[6px] w-[80%] md:w-full border border-[#088178]" src="assets/images/pay/app.jpg" alt="" />
+          <img class="rounded-[6px] w-[55%] md:w-full border border-[#088178]" src="assets/images/pay/play.jpg" alt="" />
+        </div>
+  
+        <p class="mb-2 text-base">Secured Payment Gateways</p>
+        <img src="assets/images/pay/pay.png" alt="" />
+      </div>
+    </div>
+  </footer>
+  <div class="copyright mb-5 mt-5 w-full p-2 text-center bg-[#041E42] text-white">
+    <p>&copy; 2025 Ikbal Hossain. All Rights Reserved.</p>
+  </div>
+   
+  <script>
+    var mainImg = document.getElementById("mainImg");
+var smallimg = document.getElementsByClassName("small-img");
+
+smallimg[0].onclick = function () {
+  mainImg.src = smallimg[0].src;
+}
+smallimg[1].onclick = function () {
+  mainImg.src = smallimg[1].src;
+}
+smallimg[2].onclick = function () {
+  mainImg.src = smallimg[2].src;
+}
+smallimg[3].onclick = function () {
+  mainImg.src = smallimg[3].src;
+}
+  </script>
+  
+
+    <script src="js/main.js"></script>
+</body>
+</html>
